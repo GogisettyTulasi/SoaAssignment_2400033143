@@ -28,7 +28,7 @@ services:
     image: tulasigogisetty09/docker-frontend-2400033143:latest
     container_name: docker-react
     ports:
-      - "3000:80"
+      - "5176:80"
     depends_on:
       - backend
     restart: on-failure
