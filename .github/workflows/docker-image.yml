@@ -40,6 +40,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./ASSIGNMENTWORKSPACE/PackageTrackingServiceProject
-          file: ./ASSIGNMENTWORKSPACE/PackageTrackingServiceProject/Dockerfile
+          file: ./ASSIGNMENTWORKSPACE/PackageTrackingServiceProject/DockerFile
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-backend-2400033143:latest
